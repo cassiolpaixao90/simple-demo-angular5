@@ -8,7 +8,7 @@ import { IProduct } from './product';
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product List';
-    imageWidth: number = 50;
+    imageWidth: number = 20;
     imageMargin: number = 2;
     showImage: boolean = false;
 
@@ -47,7 +47,7 @@ export class ProductListComponent implements OnInit {
 
     constructor() {
         this.filteredProducts = this.products;
-        this.listFilter = 'cart';
+        this.listFilter = '';
     }
 
     onRatingClicked(message: string): void {
