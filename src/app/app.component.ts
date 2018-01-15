@@ -1,3 +1,4 @@
+import { ProductService } from "./products/product.service";
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
     <div><h1>{{pageTitle}}</h1>
         <pm-products></pm-products>
     </div>
-    `
+    `,
+  providers:[ProductService]
 })
 export class AppComponent {
   pageTitle: string = 'Simple Demo Product Management';
